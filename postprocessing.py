@@ -78,9 +78,9 @@ def prep_deps(d):
                 shutil.copy2(os.path.join(bd, f), os.path.join(d, f))
         else:
             shutil.copy2(os.path.join(bd, f), os.path.join(d, f))
-    for src_d in ["flopy"]:
-        assert os.path.exists(src_d), src_d
-        dest_d = os.path.join(d, src_d)
-        if os.path.exists(dest_d):
-            shutil.rmtree(dest_d)
-        shutil.copytree(src_d, dest_d)
+    # for src_d in ["flopy"]:
+    #     assert os.path.exists(src_d), src_d
+    #     dest_d = os.path.join(d, src_d)
+    #     if os.path.exists(dest_d):
+    #         shutil.rmtree(dest_d)
+    #     shutil.copytree(src_d, dest_d)
