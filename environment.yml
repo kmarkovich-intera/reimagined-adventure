@@ -1,0 +1,28 @@
+name: gmdsitut
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pandas>=2.0
+  - numpy>=1.25 
+  - matplotlib 
+  - jupyter 
+  - notebook 
+  - scipy 
+  - shapely
+  - rtree
+  - pyproj>=2.0
+  - pyshp
+  - psutil
+  - git
+  - nbconvert
+  - pip:
+       - -e ./dependencies/flopy
+       - -e ./dependencies/pyemu
+       # - flopy
+       # - git+https://github.com/modflowpy/flopy.git
+       # - pyemu
+       # - git+https://github.com/pypest/pyemu.git@develop
+
+
