@@ -61,7 +61,7 @@ def prep_deps(d):
     """
     # copy in deps and exes
     if "window" in platform.platform().lower():
-        bd = os.path.join("bin", "windows")
+        bd = os.path.join("bin", "win")
     elif "linux" in platform.platform().lower():
         bd = os.path.join("bin", "linux")
     else:
